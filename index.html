@@ -1,0 +1,11 @@
+<!doctype html><html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08090d"><title>SPY — Party Game</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="bg"></div><header><div class="logo">◉ <b>SPY</b><small>PARTY GAME</small></div><button id="sound">🔊</button></header><main>
+<section id="home" class="page active"><div class="hero"><span>🕵️ REAL LIFE PARTY GAME</span><h1>Кім<br><i>Шпион?</i></h1><p>Телефонды кезекпен бер. Біреу сөзді білмейді. Қалғандары оны ұстап үлгеруі керек.</p></div>
+<div class="panel"><div class="row"><b>Ойыншылар</b><strong id="count">5</strong></div><input id="players" type="range" min="3" max="12" value="5">
+<div class="label">Режим</div><div class="modes"><button class="mode active" data-mode="classic">CLASSIC<small>1 шпион</small></button><button class="mode" data-mode="double">DOUBLE SPY<small>2 шпион</small></button><button class="mode" data-mode="chaos">CHAOS<small>рандом</small></button></div>
+<div class="label">Категория</div><div id="cats" class="cats"></div><button id="start" class="primary">ОЙЫНДЫ БАСТАУ <b>→</b></button></div></section>
+<section id="reveal" class="page"><div class="progress"><span id="pnum">1</span> / <span id="ptotal">5</span></div><p class="privacy">📱 ТЕК ӨЗІҢ КӨР</p><div id="card" class="secret"></div><button id="next" class="ghost hidden">ЖАПТЫМ ✓</button></section>
+<section id="game" class="page"><div class="timer"><b id="clock">05:00</b><small>TIME LEFT</small></div><div class="panel mission"><span>MISSION ACTIVE</span><h2>Сұрақ қой.<br><i>Өзіңді ұстатпа.</i></h2><p>Шпион тақырыпты анықтауға тырысады. Қалғандары тым оңай сұрақ қоймасын.</p><div class="hint">💡 Жасырын сөзге қатысты белгі бер.</div></div><button id="finish" class="primary red">ДАУЫС БЕРУГЕ ӨТУ</button></section>
+<section id="vote" class="page"><span>FINAL VOTE</span><h2>Кімді шпион деп ойлайсың?</h2><div id="voteGrid" class="votes"></div></section>
+<section id="result" class="page center"><div class="spyicon">🕵️</div><span>MISSION COMPLETE</span><h1 id="resultTitle">Нәтиже</h1><div id="resultBox" class="panel result"></div><button id="again" class="primary">ҚАЙТА ОЙНАУ ↻</button><button id="home" class="ghost">БАСТЫ БЕТ</button></section>
+</main><script src="app.js"></script></body></html>
